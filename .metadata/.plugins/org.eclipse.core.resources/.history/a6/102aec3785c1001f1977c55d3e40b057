@@ -1,0 +1,12 @@
+package com.example.kafka.producer;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Service;
+
+@Service
+public class KafkaProducerService {
+	
+	@Value("${spring.kafka.topic}")
+	private static final String TOPIC;
+
+}
